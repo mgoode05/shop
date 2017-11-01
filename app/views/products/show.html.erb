@@ -1,0 +1,7 @@
+<%= @product.hat_type %>
+
+<%= flash[:notice] %>
+<%= form_tag("/add_item/#{@product.id}") do %>
+    <%= select_tag "quantity", options_for_select((1..100).map{|x| [x.to_s, x]}) %>
+    <%= submit_tag "Add to Cart" %>
+<% end %>

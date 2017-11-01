@@ -1,0 +1,15 @@
+</h1> Cart </h1>
+
+<% @carts.each do |cart| %>
+<%= form_tag("/remove_item/#{cart.id}") do %>)
+<%= submit_tag "Remove" %>
+    <%= Product.find(cart.product_id).hat_type %>
+ <%= cart.quantity %>
+<% end %>
+
+
+<%= form_tag("/purchase/active_order") do %>
+<%= submit_tag "Purchase" %>
+<%= link_to "Product", products_path %>
+<% end %>
+<% end %>
