@@ -12,7 +12,7 @@ class OrderController < ApplicationController
         if @cart.save
             redirect_to cart_path
         else
-            flash|:error| = "There was a problem adding this to your cart."
+            flash[:error] = "There was a problem adding this to your cart."
             redirect_to @add_product
         end
     end
