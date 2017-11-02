@@ -57,5 +57,6 @@ end
         params.require(:cart).permit(:product_id)
         end
 
+    
 end
 

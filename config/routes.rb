@@ -5,8 +5,6 @@ resources :products
 resources :users, only: [:new, :create]
 resources :sessions, only: [:new, :create, :destroy]
 resources :carts
-# get '/orders', to: 'order#create'
-# get '/products', to: 'products#index'
 get '/login', to: 'sessions#new'
 get '/products', to: 'products#index'
 get '/carts', to: 'carts#index'

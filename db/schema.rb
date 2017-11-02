@@ -10,16 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171028013721) do
+ActiveRecord::Schema.define(version: 20171101224153) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "carts", force: :cascade do |t|
     t.bigint "product_id"
+    t.bigint "order_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "order_id"
+    t.integer "quantity"
     t.index ["order_id"], name: "index_carts_on_order_id"
     t.index ["product_id"], name: "index_carts_on_product_id"
   end
@@ -28,28 +29,30 @@ ActiveRecord::Schema.define(version: 20171028013721) do
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "is_active"
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
   create_table "products", force: :cascade do |t|
-    t.string "hat_type"
+    t.string "artist_name"
+    t.string "album_name"
     t.float "price"
-    t.string "quantity"
-    t.boolean "quick_strike"
+    t.integer "quantity"
+    t.string "album_url1"
+    t.string "album_url2"
+    t.string "album_url3"
+    t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.text "description"
   end
 
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"
-    t.string "company"
-    t.string "product"
-    t.string "past_orders"
+    t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "password_digest"
+    t.boolean "is_active"
   end
 
   add_foreign_key "carts", "orders"

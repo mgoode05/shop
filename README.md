@@ -1,7 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![alt tag](https://i.imgur.com/pPHKVq7.png)
+
+#CLASSICS
+
+Classics is an application that allows you to 
 
 Things you may want to cover:
 

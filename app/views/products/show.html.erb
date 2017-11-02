@@ -1,7 +1,19 @@
-<%= @product.hat_type %>
+    Artist: &nbsp;<%= @product.artist_name %><br>
+    Album: &nbsp;<%= @product.album_name %><br>
+    Price: &nbsp;<%= @product.price %><br>
+    Description: &nbsp;<%= @product.description %>
+
+<div class="product-images">
+    <img src="<%= @product.album_url1 %>">
+    <img src="<%= @product.album_url2 %>">
+    <img src="<%= @product.album_url3 %>">
+</div>
+
+   
 
 <%= flash[:notice] %>
 <%= form_tag("/add_item/#{@product.id}") do %>
-    <%= select_tag "quantity", options_for_select((1..100).map{|x| [x.to_s, x]}) %>
-    <%= submit_tag "Add to Cart" %>
+   <p class="text-white">Quantity &nbsp; <%= select_tag "quantity", options_for_select((1..10).map{|x| [x.to_s, x]}), :class => "btn btn-primary dropdown-toggle" %>
+    <%= submit_tag("Add to Cart", :class => "btn btn-primary") %></p>
 <% end %>
+    </div>
