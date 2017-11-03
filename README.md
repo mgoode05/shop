@@ -1,8 +1,8 @@
-# README
+
 
 ![alt tag](https://i.imgur.com/pPHKVq7.png)
 
-#CLASSICS
+# CLASSICS
 
     Classics is an application that allows you to browse some of the greatest music ever created by some of the greatest artists of all time. The music is timeless. The album covers are timeless.
 
@@ -20,7 +20,9 @@
 
     Download repository
     or
-    https://github.com/mgoode05/shop.git
+    [GitHub](https://github.com/mgoode05/shop.git)
+    or
+    [Heroku](https://ancient-dusk-83552.herokuapp.com/sessions/new)
 
 # Next Steps
 
