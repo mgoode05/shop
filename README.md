@@ -4,7 +4,7 @@
 
 #CLASSICS
 
-Classics is an application that allows you to browse some of the greatest music ever created by some of the greatest artists of all time. The music is timeless. The album covers are timeless.
+    Classics is an application that allows you to browse some of the greatest music ever created by some of the greatest artists of all time. The music is timeless. The album covers are timeless.
 
 # Technologies Used 
     
@@ -20,6 +20,7 @@ Classics is an application that allows you to browse some of the greatest music 
 
     Download repository
     or
+    https://github.com/mgoode05/shop.git
 
 # Next Steps
 
@@ -29,21 +30,6 @@ Classics is an application that allows you to browse some of the greatest music 
 
     Please visit my [Trello](https://trello.com/b/omVEu5W3/shop)
 
+# Authors
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    Michael S. Goode, Esq.
