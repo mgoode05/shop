@@ -21,8 +21,13 @@ Classics is an application that allows you to browse some of the greatest music 
     Download repository
     or
 
-# 
+# Next Steps
 
+    I would like to implement a check out function and add media files as attributes so the user can listen to each album's most famous song.
+
+# Plannng
+
+    Please visit my [Trello](https://trello.com/b/omVEu5W3/shop)
 
 
 * Ruby version
